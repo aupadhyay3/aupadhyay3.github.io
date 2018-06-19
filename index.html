@@ -192,10 +192,10 @@
         background-color: transparent;
         border: 3px solid white;
         border-radius: 4px;
-        margin-top: -80px;
-        margin-left: -80px;
+        margin-top: -7%;
+        margin-left: -7%;
         position: absolute;
-        width: 200px;
+
     }
 
     .button5:hover {
@@ -295,6 +295,65 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+        
+    @media all and (max-width: 1040px) and (min-width: 867px) {
+    
+    .button5 {
+        font-size: 80%;
+        text-align: center;
+        padding-bottom: 2px;
+    }      
+}
+        
+    @media all and (max-width: 867px) and (min-width: 400px) {
+    
+    .button5 {
+        font-size: 60%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }      
+}
+ 
+        
+    @media all and (max-width: 633px) and (min-width: 400px) {
+    
+    .headerbar {
+        font-size: 80%;
+    }
+        
+    #careercoachlogo{
+          width: 240px;  
+    }
+}
+        
+    @media all and (max-width: 633px) and (min-width: 400px) {
+    
+    .headerbar {
+        font-size: 75%;
+        margin-bottom: -19px;
+        padding-bottom: 15px;
+    }
+        
+        
+    #careercoachlogo{
+          width: 220px;  
+    }
+}
+        
+    @media all and (max-width: 450px) and (min-width: 400px) {
+    
+    .headerbar {
+        font-size: 60%;
+    }
+        
+        
+    #careercoachlogo{
+          width: 203px;  
+    }
+}
+        
 
 </style>
     </head>
@@ -302,12 +361,12 @@
 <body>
     <font face='Raleway'>
 
-	<ul>
+	<ul class="headerbar">
         <li><a href="customerreviews.html">REVIEWS</a></li>
 		<li><a href="findajob.html">FIND A JOB</a></li>
             <li><a href="tips.html">TIPS</a></li> 
 		<li><a id="home" href="#home">HOME</a></li>
-        <a href="index.html"><img src="careercoachlogo.png" width="360"></a>
+        <a href="index.html"><img id="careercoachlogo" style="position: fixed" src="careercoachlogo.png" width="300px"></a>
 	</ul>
 
 	<div id="nav_bar">
@@ -326,8 +385,8 @@
 	</div>
 
 	<div id="homepage_first_section">
-	<img src="homepgimage.png" width="100%" height="490px">
-        <center><button class="button5" onclick="location.href = 'findajob.html'">FIND A JOB</button></center>
+	<img src="homepgimage.png" width="100%">
+        <center><button style="width: 15%; height: 13%" class="button5" onclick="location.href = 'findajob.html'">FIND A JOB</button></center>
 	</div>
     
     

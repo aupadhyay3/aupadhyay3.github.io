@@ -300,19 +300,26 @@
         width: 100%; 
     }
         
-    @media all and (max-width: 1040px) and (min-width: 867px) {
+    @media all and (max-width: 1176px) and (min-width: 867px) {
     
     .button5 {
-        font-size: 80%;
+        font-size: 14px;
         text-align: center;
+        height: 50px;
+        padding-top: 2px;
         padding-bottom: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        top: 470px;
+
     }      
 }
         
-    @media all and (max-width: 867px) and (min-width: 400px) {
+    @media all and (max-width: 918px) and (min-width: 400px) {
     
     .button5 {
-        font-size: 60%;
+        font-size: 14px;
+        top: 430px;
         padding-top: 2px;
         padding-bottom: 2px;
         padding-left: 2px;
@@ -320,6 +327,7 @@
     }      
 }
  
+
         
     @media all and (max-width: 633px) and (min-width: 400px) {
     
@@ -404,6 +412,41 @@
         }
 }
         
+        
+    @media all and (max-width: 800px) and (min-width: 400px) {
+    
+        #homepageimg{
+            margin-left: -10%;
+        }
+}
+        
+    @media all and (max-width: 684px) and (min-width: 400px) {
+    
+        #homepageimg{
+            margin-left: -25%;
+            width: 1200px;
+        }
+        
+        .button5{
+            top: 380px;
+        }
+        
+    @media all and (max-width: 495px) and (min-width: 400px) {
+    
+        #homepageimg{
+            margin-left: -30%;
+            width: 910px;
+        }
+        
+        .button5{
+            width: 80px;
+            height: 20px;
+            top: 290px;
+            left: 140px;
+        }
+        
+}
+        
 
 </style>
     </head>
@@ -435,8 +478,10 @@
 	</div>
 
 	<div id="homepage_first_section">
-	<img src="homepgimage.png" width="100%">
-        <center><button style="width: 15%; height: 13%" class="button5" onclick="location.href = 'findajob.html'">FIND A JOB</button></center>
+	<img id="homepageimg" src="homepgimage.png" width="1280px" position="absolute">
+    <img id="invisible" src="" width="10%">
+        
+        <center><button style="width: 160px; height: 60px;" class="button5" onclick="location.href = 'findajob.html'">FIND A JOB</button></center>
 	</div>
     
     

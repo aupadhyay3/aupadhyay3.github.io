@@ -192,7 +192,7 @@
         background-color: transparent;
         border: 3px solid white;
         border-radius: 4px;
-        margin-top: -7%;
+        top: 370px;
         margin-left: -7%;
         position: absolute;
 
@@ -234,8 +234,14 @@
     #sendemaildiv:hover a{
         color: #FCD307;
     }
-
+        
+    #philosophy_div{
+        background-color: white;
+        height: 450px;
+        position: relative;
     
+    }
+
     
     #homepage_first_section{
         position: relative;
@@ -253,10 +259,6 @@
         margin-left: 69%;
         position: absolute;
         
-    }
-    
-    #philosophy_div{
-        position: relative;
     }
     
     #messagebox{
@@ -299,33 +301,6 @@
     .embedly-card{
         width: 100%; 
     }
-        
-    @media all and (max-width: 1176px) and (min-width: 867px) {
-    
-    .button5 {
-        font-size: 14px;
-        text-align: center;
-        height: 50px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 2px;
-        padding-right: 2px;
-        top: 470px;
-
-    }      
-}
-        
-    @media all and (max-width: 918px) and (min-width: 400px) {
-    
-    .button5 {
-        font-size: 14px;
-        top: 430px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 2px;
-        padding-right: 2px;
-    }      
-}
  
 
         
@@ -374,6 +349,15 @@
         #nav_bar{
             height: 50%;
         }
+}
+        
+    @media all and (max-width: 1000px) and (min-width: 400px) {
+    
+        #philosophy{
+            width: 700px;
+            transform: translateX(10);
+        }
+        
 }
         
         
@@ -428,7 +412,7 @@
         }
         
         .button5{
-            top: 380px;
+            top: 350px;
         }
         
     @media all and (max-width: 495px) and (min-width: 400px) {
@@ -439,13 +423,12 @@
         }
         
         .button5{
-            width: 80px;
-            height: 20px;
-            top: 290px;
+            top: 250px;
             left: 140px;
         }
         
 }
+    
         
 
 </style>
@@ -486,7 +469,9 @@
     
     
     <div id="philosophy_div">
-    <img id="philosophy" src="philosophygraphic.png" width="100%">
+    <img style="padding-bottom: 50px; padding-top: 20px; margin-left: 15%;" id="philosophyheader" src="philosophyheader.png" width="350px">
+    <br>
+    <img style="padding-bottom: 50px; margin-left: 18%; position: absolute;" id="philosophy" src="philosophygraphic.png" width="800px">
         <a href="customerreviews.html"><div style=" position: absolute;" id="hereforcustomerreviews" onclick=""></div></a>
     </div>
         

@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Responsive 3-Line Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: white;
+	}
+	li {
+		float: right;
+        padding-top: 30px;
+	}
+        
+	li a {
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+        
+    li a:hover {
+		color: #FCD307;
+	}
+        
+    
+	@media screen and (max-width: 768px) {
+		#menu {
+			width:1.4em;
+			display: block;
+			background:white;
+			font-size:1.35em;
+			text-align: center;
+            float: right;
+		}
+		#headerbar.js {
+			display: none;
+		}
+		ul {
+            float: right;
+		}
+		li {
+			width: 100%;
+			border-right:none;
+            background:white;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		#menu {
+			display: none;
+		}
+	}
+	</style>
+</head>
+<body>
+<ul id="headerbar">
+        <li><a href="customerreviews.html">REVIEWS</a></li>
+		<li><a href="findajob.html">FIND A JOB</a></li>
+        <li><a href="tips.html">TIPS</a></li> 
+		<li><a id="home" href="index.html">HOME</a></li>
+        <a href="index.html"><img id="careercoachlogo" style="position: absolute" src="careercoachlogo.png" width="300px"></a>
+        
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#headerbar").addClass("js").before('<div id="menu">&#9776;</div>');
+	$("#menu").click(function(){
+		$("#headerbar").toggle();
+	});
+    
+    
+    
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#headerbar").removeAttr("style");
+		}
+	});
+</script>
+</body>
+</html>

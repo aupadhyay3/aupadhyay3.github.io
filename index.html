@@ -369,35 +369,7 @@ i {
     .embedly-card{
         width: 100%; 
     }
- 
 
-	@media screen and (max-width: 768px) {
-		#menu {
-			width:1.4em;
-			display: block;
-			background:white;
-            margin-top: 0px;
-			font-size:2.50em;
-			text-align: center;
-            float: right;
-		}
-		#headerbar.js {
-			display: none;
-		}
-		ul {
-            float: right;
-		}
-		li {
-			width: 100%;
-			border-right:none;
-            background:white;
-		}
-	}
-	@media screen and (min-width: 768px) {
-		#menu {
-			display: none;
-		}
-	}
         
         
 /*    @media all and (max-width: 633px) and (min-width: 400px) {
@@ -464,6 +436,47 @@ i {
         }
 }
 */
+        
+    @media all and (max-width: 1011px) and (min-width: 400px) {
+
+        #philosophyheader{
+            transform: translateX(-15%);
+        }
+        
+        #philosophy1{
+            transform: translateX(-15%);
+        }
+}
+        
+        @media all and (max-width: 834px) and (min-width: 400px) {
+        
+        #philosophy_div{
+            height: 980px;
+        }
+            
+        #philosophyheader{
+            transform: translateX(-10%); 
+        }
+            
+        #philosophy1{
+            content: url(philosophygraphic_1.png);
+            margin-left: 0;
+            transform: translateX(-25%);
+            
+        }
+            
+        #philosophy2{
+            content: url(philosophygraphic_2.png);
+            transform: translateX(-35%);
+            margin-left: 0;
+        }
+            
+        #philosophy3{
+            content: url(philosophygraphic_3.png);
+            transform: translateX(-35%);
+            margin-left: 0;
+        }
+}
       
         
     @media all and (max-width: 800px) and (min-width: 400px) {
@@ -572,11 +585,23 @@ i {
     <div id="philosophy_div">
     <img style="padding-bottom: 50px; padding-top: 20px; margin-left: 15%;" id="philosophyheader" src="philosophyheader.png" width="350px">
     <br>
-    <img style="padding-bottom: 50px; margin-left: 18%; position: absolute;" id="philosophy" src="philosophygraphic.png" width="800px">
-        <a href="customerreviews.html"><div style=" position: absolute;" id="hereforcustomerreviews" onclick=""></div></a>
+        
+    <div>
+    <img id="philosophy1" style="padding-bottom: 50px; margin-left: 18%; position: absolute;" id="philosophy" src="philosophygraphic.png" width="800px">
     </div>
         
-    <img src="featuredarticle.png" width="100%">
+        <a href="customerreviews.html"><div style=" position: absolute;" id="hereforcustomerreviews" onclick=""></div></a>
+        
+        
+        
+    <div id="philosophy2div"><img id="philosophy2" style="padding-bottom: 50px;  margin-left: 18%; position: absolute; top: 40%; " id="philosophy" src="" width="800px"></div>
+        
+        
+    <div id="philosophy3div"><img id="philosophy3" style="padding-bottom: 50px;  margin-left: 18%; position: absolute; top: 69%; " id="philosophy" src="" width="800px"></div>
+        
+    </div>
+        
+    <img src="featuredarticle.png" width="1280px">
         <div id="featuredarticle">
         <a class="embedly-card" data-card-controls="0" href="https://www.irishnews.com/sponsored/nijobs/2018/06/18/news/tips-to-help-you-survive-and-thrive-in-your-new-job-1358976/">Tips to help you survive and thrive in your new job</a>
 <script async src="https://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
